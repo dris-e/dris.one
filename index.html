@@ -1,4 +1,130 @@
-<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Dris Elamri | dris.one</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/DRIS-ELAMRI-PHOTO.png" type="image/x-icon" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
+	<meta name="description" content="Hi, I'm Dris Elamri, the founder of dris LLC. As an entrepreneur, I strive to create innovative and impactful products that inspire others. With a passion for creativity and a drive for success, I am constantly seeking new challenges and opportunities to grow both personally and professionally." />
+    <meta name="keywords" content="dris, elamri, dris elamri, llc, drisllc, minnesota, dris llc, dris one, dris.one, dris online">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="https://www.dris.one/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Dris Elamri - Entrepreneur, designer, creator, developer." />
+<meta property="og:description" content="Hi, I'm Dris Elamri, the founder of dris LLC. As an entrepreneur, I strive to create innovative and impactful products that inspire others. With a passion for creativity and a drive for success, I am constantly seeking new challenges and opportunities to grow both personally and professionally." />
+<meta property="og:url" content="https://www.dris.one/" />
+<meta property="og:site_name" content="Dris Elamri" />
+<meta property="og:image" content="assets/DRIS-ELAMRI-PHOTO.png" />
+<meta property="og:image:width" content="769" />
+<meta property="og:image:height" content="769" />
+<meta property="og:image:alt" content="Dris Elamri photo. Instagram @dris.elamri, TikTok: @dris.e" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dris Elamri - Entrepreneur, designer, creator, developer." />
+<meta name="twitter:description" content="Hi, I'm Dris Elamri, the founder of dris LLC. As an entrepreneur, I strive to create innovative and impactful products that inspire others. With a passion for creativity and a drive for success, I am constantly seeking new challenges and opportunities to grow both personally and professionally." />
+<meta name="twitter:site" content="@driselamri" />
+<meta name="twitter:creator" content="@driselamri" />
+<meta name="twitter:image" content="assets/DRIS-ELAMRI-PHOTO.png" />
+ <!-- Javascript -->
+    <script>
+        window.onload = function() {
+            move();
+            var svg = document.querySelectorAll("svg");
+            var name = document.getElementById("Name");
+            var image = document.getElementById("Photo");
+            var descrip = document.getElementById("Description");
+            var bottom = document.getElementsByClassName("gear");
+            var title = document.getElementById("title");
+            var footer = document.getElementById("footertext");
+
+            name.style.fontSize = "35px";
+            image.style.height = "100px";
+            image.style.width = "100px";
+            image.style.borderRadius = "35%";
+            descrip.style.marginTop ="0px";       
+                for (i = 0; i < svg.length; i++) {
+                    svg[i].style.marginLeft = "0%";
+                }
+            setTimeout(function(){
+                for (j = 0; j < bottom.length; j++) {
+                    bottom[j].style.opacity = "1";
+                }
+                title.style.opacity = 1;
+
+                setTimeout(function(){
+                    footer.style.opacity = 1;
+            }, 1000);
+            }, 1200);
+        }
+
+        var k = 0;
+        function dark() {
+            var bottom = document.getElementsByClassName("gear");
+            var title = document.getElementById("title");
+            if (k % 2 === 0) {
+                document.documentElement.style.setProperty("--background-alt", "#1f1e1e");
+                for (j = 0; j < bottom.length; j++) {
+                    bottom[j].style.color = "#f5f5f5";
+                    bottom[j].style.borderColor = "#f5f5f5";
+                    title.style.color = "#f5f5f5";
+                }
+            } else {
+                document.documentElement.style.setProperty("--background-alt", "#f5f5f5"); //light
+                for (j = 0; j < bottom.length; j++) {
+                    bottom[j].style.color = "#1f1e1e";
+                    bottom[j].style.borderColor = "#1f1e1e";
+                    title.style.color = "#1f1e1e";
+                }
+            }
+                k++;
+                console.log(k);
+            }
+
+            function move() {
+                var special = document.getElementsByClassName("special");
+                var timeout = (Math.random() * 8000) + 2000;
+                var spacing = (Math.random() * 10) + 5
+                setTimeout(function(){
+                    special[0].style.letterSpacing = spacing + "px";
+                    special[0].style.color = "#1f1e1e";
+                    special[0].style.fontSize = "45px";
+                    setTimeout(function(){special[0].style.letterSpacing = "0px"; special[0].style.color = "#443ae8"; special[0].style.fontSize = "35px";},1200)
+                    move();
+                }, timeout);
+            }
+        
+    </script>
+	</head>
+<body>
+    <img id="Photo" src="assets/DRIS-ELAMRI-PHOTO.png" alt="Dris Elamri profile picture">
+    <span class="Name" id="Name"><span class="special" onclick="dark()">dris</span> ELAMRI<span class="click"> click!</span></span>
+    <span class="Name" id="Description">Entrepreneur, designer, creator, and developer.</span>
+	
+    <div id="linksbutton">
+        <a class="links" href="mailto:elamri@dris.llc" target="_blank" style="border-radius: 15px;"><?xml version="1.0" ?><svg style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M20,3H4C1.8,3,0,4.8,0,7v10c0,2.2,1.8,4,4,4h16c2.2,0,4-1.8,4-4V7C24,4.8,22.2,3,20,3z M21.6,8.8l-7.9,5.3   c-0.5,0.3-1.1,0.5-1.7,0.5s-1.2-0.2-1.7-0.5L2.4,8.8C2,8.5,1.9,7.9,2.2,7.4C2.5,7,3.1,6.9,3.6,7.2l7.9,5.3c0.3,0.2,0.8,0.2,1.1,0   l7.9-5.3c0.5-0.3,1.1-0.2,1.4,0.3C22.1,7.9,22,8.5,21.6,8.8z" id="email"/></g></svg>&nbsp;Contact</a>
+					
+		<a class="links" href="https://www.linkedin.com/in/driselamri/" target="_blank" style="border-radius: 15px;"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M473.305,-1.353c20.88,0 37.885,16.533 37.885,36.926l0,438.251c0,20.393 -17.005,36.954 -37.885,36.954l-436.459,0c-20.839,0 -37.773,-16.561 -37.773,-36.954l0,-438.251c0,-20.393 16.934,-36.926 37.773,-36.926l436.459,0Zm-37.829,436.389l0,-134.034c0,-65.822 -14.212,-116.427 -91.12,-116.427c-36.955,0 -61.739,20.263 -71.867,39.476l-1.04,0l0,-33.411l-72.811,0l0,244.396l75.866,0l0,-120.878c0,-31.883 6.031,-62.773 45.554,-62.773c38.981,0 39.468,36.461 39.468,64.802l0,118.849l75.95,0Zm-284.489,-244.396l-76.034,0l0,244.396l76.034,0l0,-244.396Zm-37.997,-121.489c-24.395,0 -44.066,19.735 -44.066,44.047c0,24.318 19.671,44.052 44.066,44.052c24.299,0 44.026,-19.734 44.026,-44.052c0,-24.312 -19.727,-44.047 -44.026,-44.047Z"/></svg>&nbsp;LinkedIn</a>
+		<a class="links" href="https://www.twitter.com/driselamri" target="_blank" style="border-radius: 15px;"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="400" style="fill:none;" width="400" x="56" y="56"/><path d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104"/></svg>&nbsp;Twitter</a>
+		<a class="links" href="https://www.instagram.com/dris.elamri" target="_blank" style="border-radius: 15px;"><?xml version="1.0" ?><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z"/></svg>&nbsp;Instagram</a>
+        <a class="links" href="https://www.youtube.com/@driselamri/" target="_blank" style="border-radius: 15px;"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z" style="fill-rule:nonzero;"/></svg>&nbsp;YouTube</a>
+        <a class="links" href="https://tiktok.com/@dris.e" target="_blank" style="border-radius: 15px;"><?xml version="1.0" ?><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>&nbsp;TikTok</a> 
+    </div>
+
+
+<span id="title">Links:</span>
+    <div class="Gears">
+		<a class="gear" href="https://dris.llc" target="_blank" style="border-radius: 15px;">dris.llc</a> 
+<a class="gear" href="https://dris.one" target="_blank" style="border-radius: 15px;">dris.one</a> 				
+        <a class="gear" href="https://dris.us" target="_blank" style="border-radius: 15px;">dris.us</a>
+        <a class="gear" href="https://driselamri.com" target="_blank" style="border-radius: 15px;">driselamri.com</a>
+				 <a class="gear" href="https://elamri.llc" target="_blank" style="border-radius: 15px;">elamri.llc</a>  
+    </div>
+<span id="footertext">Dris Elamri, 2023 &nbsp;| &nbsp;elamri@dris.llc</span>
+</body></html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,4 +173,4 @@
     </div>
 
 </body>
-</html>
+</html> -->
