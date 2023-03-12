@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/DRIS-LLC-ICON.png">
+    <title>Dris Elamri | dris.one</title>
+    <meta name="description" content="The official website of Dris Elamri. Entrepreneur, designer, creator, and developer.">
+    <meta name="keywords" content="dris, elamri, dris elamri, llc, drisllc, minnesota, dris llc, dris one, dris.one, dris online">
+    <meta name="author" content="Dris Elamri">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+    <script>
+      window.onload=function() {
+        var one = document.getElementById("dot-one");
+        var two = document.getElementById("dot-two");
+        var three = document.getElementById("dot-three");
+        
+        moveDots();
+
+        function moveDots() {
+            setTimeout(function(){one.style.marginTop="-100px";}, 1000);
+            setTimeout(function(){one.style.marginTop="0px";}, 1700);
+            setTimeout(function(){two.style.marginTop="-100px";}, 2000);
+            setTimeout(function(){two.style.marginTop="0px";}, 2700);
+            setTimeout(function(){three.style.marginTop="-100px";}, 3000);
+            setTimeout(function(){three.style.marginTop="0px";}, 3700);
+            setTimeout(function(){moveDots()}, 3500);
+        }
+
+        };
+  </script>
+</head>
+<body>
+    <div id="menu">
+        <div id="items">
+            <h1>Site Under Construction<span><span id="dot-one">.</span><span id="dot-two">.</span><span id="dot-three">.</span></span></h1>
+        </div>
+        <div id="footer">
+            <p id="footer-text"><a href="https://www.linkedin.com/in/driselamri"><span>Dris Elamri</span></a></p>
+            
+        </div>
+    </div>
+
+</body>
+</html>
