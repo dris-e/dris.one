@@ -218,11 +218,11 @@ svg {
 
 .click {
     font-size: 0px;
+    transition: all 1s cubic-bezier(.08, .59, .29, .99);
 }
 
 .special:hover ~ .click{
     font-size: 17px !important;
-    transition: all 1s cubic-bezier(.08, .59, .29, .99);
     color: var(--color-dark) !important;
 }
 
