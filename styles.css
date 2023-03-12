@@ -158,9 +158,9 @@ body {
 }
 
 .gear:hover {
-    background-color: var(--color-dark);
-    color: var(--color-alt);
-    border: solid var(--color-dark) 2px;
+    background-color: var(--color-dark) !important;
+    color: var(--color-alt) !important;
+    border: solid var(--color-dark) 2px !important;
 }
 
 .footervalue {
