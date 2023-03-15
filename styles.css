@@ -30,6 +30,12 @@
     src: url("assets/VintageGlamourItalic.ttf")  format("truetype");
 }
 
+@font-face {
+    font-family: "vintageGlamour";
+    src: url("assets/VintageGlamourRegular.ttf")  format("truetype");
+    font-style: italic;
+}
+
 body {
     background: var(--background-alt);
     /* background: linear-gradient(45deg, var(--background-alt), var(--background-col), var(--color-dark)); */
@@ -56,12 +62,30 @@ body {
     width: 0px;
     height: 0px;
     display: block;
-    margin: 4% auto 13px;
+    margin: 50px auto 13px;
     border: solid var(--color-main) 2px;
     border-radius: 0%;
     opacity: 95%;
-    transition: height 700ms ease, width 700ms ease, border-radius 1000ms ease, opacity 700ms ease;
+    transition: height 700ms ease, width 700ms ease, border-radius 1000ms ease, opacity 700ms ease, scale 800ms cubic-bezier(.08, .59, .29, .99), margin 700ms cubic-bezier(.08, .59, .29, .99);
 }
+
+/* #Banner {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, var(--background-alt), var(--background-col), var(--color-dark));
+    background-size: 200% 200%;
+    border: 0px;
+    outline: 0px;
+    margin-top: -50px !important;
+    height: 110px;
+    width: 100vw;
+    transition: all 450ms cubic-bezier(.08, .59, .29, .99);
+}
+
+#Banner:hover {
+    opacity: 1;
+} */
 
 #Photo:hover {
     opacity: 1;
@@ -87,6 +111,7 @@ body {
 #Description {
     margin-top: 1000px;
     transition: all 700ms ease;
+    font-style: italic;
 }
 
 #title {
@@ -208,6 +233,18 @@ svg {
     fill: var(--color-alt) !important;
 }
 
+.arrow {
+    opacity: 0;
+    position: absolute;
+    margin-top: 3px;
+    transition: all 500ms cubic-bezier(.08, .59, .29, .99);
+}
+
+.links:hover .arrow {
+    opacity: 0.7;
+    margin-left: 7px !important;
+}
+
 .special {
     font-family: var(--font-alt) !important;
     /* color: var(--color-dark) !important; */
@@ -254,7 +291,7 @@ svg {
     border: solid var(--color-dark) 1.3px !important;
 }
 
-#verified:hover ~ #verify{
+#verified:hover ~ #verify {
     font-size: 10px !important;
 
     opacity: 1;
@@ -264,6 +301,44 @@ svg {
     /* background-color: var(--color-dark); */
     border-radius: 10%;
     text-decoration: underline;
+}
+
+#Location {
+    color: var(--color-dark);
+    opacity: 0.8;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    transition: all 700ms cubic-bezier(.08, .59, .29, .99);
+}
+
+.location {
+    padding-right: 140px !important;
+    padding-top: 5px;
+    position: absolute;
+    stroke: var(--color-dark);
+    transition: scale 500ms, transform 500ms, padding-right 500ms, padding-bottom 500ms, stroke 500ms;
+    transition-timing-function: cubic-bezier(.08, .59, .29, .99);
+}
+
+#City {
+    visibility: hidden;
+    font-size: 0px;
+    font-style: italic;
+    transition: all 700ms cubic-bezier(.08, .59, .29, .99);
+}
+
+.location:hover {
+    scale: 1.8;
+    /* transform: rotate(-15deg); */
+    padding-right: 80px !important;
+    /* padding-bottom: 130px !important; */
+    text-decoration: underline !important;
+    stroke: var(--color-main) !important;
+}
+
+.location:hover ~ #City {
+    visibility: visible !important;
+    font-size: 17px !important;
 }
 
 /* @font-face {
