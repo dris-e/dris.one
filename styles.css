@@ -92,7 +92,7 @@ img {
 }
 
 .content {
-  padding: 6rem 1rem;
+  padding: 5rem 1rem;
   padding-bottom: 0.25rem;
   box-sizing: border-box;
   margin-bottom: 1rem;
@@ -196,8 +196,9 @@ img {
   border-radius: 0.25rem;
   height: 115px;
   width: 100%;
-  border: 0.5px var(--border);
-  filter: grayscale(0.75);
+  margin-bottom: 0.25rem;
+  border: 0.75px var(--border);
+  filter: grayscale(0.5);
 }
 
 .project:hover img {
