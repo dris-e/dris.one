@@ -92,7 +92,7 @@
       </div>
       <!-- links section -->
       <section class="flex gaps full">
-        <div class="box transition">
+        <div class="box transition active">
           <a class="flex row between" href="mailto:elamri@dris.llc" target="_blank">
             <i class="icon lg primary fa-solid fa-paper-plane"></i>
             <div class="flex row">
@@ -208,5 +208,13 @@
       age--;
     }
     document.getElementById("age").textContent = age;
+
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(box => {
+      box.addEventListener("mouseenter", () => {
+        boxes[0].classList.remove("active");
+      });
+    });
   </script>
 </html>
