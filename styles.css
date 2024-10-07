@@ -1,8 +1,8 @@
 :root {
   --primary: rgb(30, 30, 31);
   --secondary: rgba(43, 43, 44, 0.9);
-  --accent: rgba(68, 58, 232, 1);
-  --accent-alt: rgba(68, 58, 232, 0.5);
+  --accent: rgba(77, 93, 255, 1);
+  --accent-alt: rgba(77, 93, 255, 0.7);
   --background: rgb(245, 245, 245);
   --background-alt: rgb(250, 250, 250);
   --line: rgba(0, 0, 0, 0.1);
