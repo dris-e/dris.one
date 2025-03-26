@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpg" href="https://dris.one/assets/dris-elamri-favicon.png" />
+    <link rel="icon" type="image/png" href="https://dris.one/assets/dris-elamri-favicon.png" />
     <title>Dris Elamri - Entrepreneur, Designer, Creator, & Developer | dris.one</title>
     <meta
       name="description"
       content="I'm Dris Elamri, an entrepreneur, designer, creator, and developer from Minnesota. I'm a self-taught developer with over 8 years of experience." />
-    <meta name="keywords" content="Dris Elamri, entrepreneur, designer, creator, developer, Parkt, DRIS LLC, Formscale, LIRA, SparkHS, lemonAYD, Minnesota" />
+    <meta
+      name="keywords"
+      content="Dris Elamri, entrepreneur, designer, creator, developer, Parkt, DRIS LLC, Formscale, LIRA, SparkHS, lemonAYD, Minnesota" />
     <meta name="author" content="Dris Elamri" />
 
     <meta property="og:type" content="website" />
@@ -16,13 +18,13 @@
     <meta property="og:title" content="Dris Elamri - Entrepreneur, Designer, Creator, & Developer" />
     <meta property="og:description" content="Dris Elamri, an entrepreneur & developer from Minnesota." />
     <meta property="og:site_name" content="Dris Elamri" />
-    <meta property="og:image" content="https://dris.one/assets/dris-elamri-image.jpg" />
+    <!-- <meta property="og:image" content="https://dris.one/assets/dris-elamri-image.jpg" /> -->
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://dris.one/" />
     <meta property="twitter:title" content="Dris Elamri - Entrepreneur, Designer, Creator, & Developer " />
     <meta property="twitter:description" content="Dris Elamri, an entrepreneur & developer from Minnesota." />
-    <meta property="twitter:image" content="https://dris.one/assets/dris-elamri-image.jpg" />
+    <!-- <meta property="twitter:image" content="https://dris.one/assets/dris-elamri-image.jpg" /> -->
 
     <link rel="canonical" href="https://dris.one/" />
     <meta name="robots" content="index, follow" />
@@ -67,24 +69,29 @@
         background: rgba(77, 93, 255, 0.7);
       }
 
-      @font-face {
+      /* @font-face {
         font-family: "Instrument Serif";
         src: url("/assets/InstrumentSerif.ttf");
+      }
+
+      @font-face {
+        font-family: "Pixelify Sans";
+        src: url("/assets/PixelifySans.ttf");
       }
 
       h1,
       h2 {
         font-family: "Instrument Serif";
-      }
+        font-family: "Pixelify Sans", sans-serif;
+        font-family: "Arial", sans-serif;
+      } */
 
       h1 {
         font-size: 2.5em;
-        margin-bottom: 16px;
       }
 
       h2 {
         font-size: 2em;
-        margin-bottom: 12px;
       }
 
       /* color: rgb(77, 93, 255); */
@@ -97,17 +104,17 @@
       <p>Entrepreneur, designer, creator, & developer from Minnesota.</p>
 
       <p>
-        <a style="text-decoration: underline" href="/#contact">Contact</a> |
-        <a style="text-decoration: underline" href="https://www.linkedin.com/in/driselamri/" target="_blank">LinkedIn</a> |
-        <a style="text-decoration: underline" href="https://x.com/driselamri" target="_blank">Twitter</a> |
-        <a style="text-decoration: underline" href="https://www.instagram.com/dris.404/" target="_blank">Instagram</a> |
+        <a style="text-decoration: underline" href="/#contact">Contact</a> /
+        <a style="text-decoration: underline" href="https://www.linkedin.com/in/driselamri/" target="_blank">LinkedIn</a> /
+        <a style="text-decoration: underline" href="https://x.com/driselamri" target="_blank">Twitter</a> /
+        <a style="text-decoration: underline" href="https://www.instagram.com/dris.404/" target="_blank">Instagram</a> /
         <a style="text-decoration: underline" href="https://www.github.com/dris-e" target="_blank">Github</a>
       </p>
     </header>
     <main>
       <hr />
       <article>
-        <!-- <h2>CURRENTLY:</h2> -->
+        <h2>CURRENTLY:</h2>
         <blockquote>
           "Updating Formscale & <a href="https://world.dris.one" target="_blank">DRIS WORLD</a>."<br />
           Mar 25, 2025
@@ -123,7 +130,7 @@
           <dd>AI study tool (acquired).</dd>
           <dt><a href="https://parkt.app" target="_blank">Parkt</a> (2024-)</dt>
           <dd>Parking marketplace app.</dd>
-          <dt><a href="https://dris.llc" target="_blank">DRIS LLC</a> (2025-)</dt>
+          <dt><a href="https://dris.llc" target="_blank">DRIS LLC</a> (2022-)</dt>
           <dd>Marketing & brand development.</dd>
           <dt><a href="https://sparkhs.org" target="_blank">SparkHS</a> (2023-2025)</dt>
           <dd>High-school business competition.</dd>
@@ -138,7 +145,7 @@
           <dt><a href="https://world.dris.one" target="_blank">DRIS WORLD</a> (2025)</dt>
           <dd>Multiplayer virtual world.</dd>
           <dt><a href="https://dris-e.github.io/worldspin" target="_blank">WORLDKEEPSSPINNING</a> (2025)</dt>
-          <dd>Site for a friend.</dd>
+          <dd>Site for a friend (WIP).</dd>
           <dt><a href="https://quarter.nyc" target="_blank">Quarter</a> (2025)</dt>
           <dd>Made the logo.</dd>
           <dt><a href="https://collegerejections.com" target="_blank">CollegeRejections.com</a> (2024)</dt>
@@ -170,4 +177,32 @@
       </article>
     </main>
   </body>
+  <script>
+    const text = "DRIS ELAMRI";
+    const h1 = document.querySelector("h1");
+
+    const scramble = () => {
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let iterations = 0;
+
+      const interval = setInterval(() => {
+        h1.textContent = text
+          .split("")
+          .map((letter, index) => {
+            if (letter === " ") return letter;
+            if (index < iterations) return text[index];
+            return chars[Math.floor(Math.random() * 26)];
+          })
+          .join("");
+
+        iterations += 1 / 3;
+        if (iterations >= text.length) {
+          clearInterval(interval);
+          h1.textContent = text + ".";
+        }
+      }, 100);
+    };
+
+    scramble();
+  </script>
 </html>
