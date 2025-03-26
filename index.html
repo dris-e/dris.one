@@ -61,229 +61,105 @@
         }
       }
     </script>
+    <link rel="stylesheet" href="mi.css" />
+    <style>
+      ::selection {
+        background: rgba(77, 93, 255, 0.7);
+      }
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      @font-face {
+        font-family: "Instrument Serif";
+        src: url("/assets/InstrumentSerif.ttf");
+      }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+      h1, h2 {
+        font-family: "Instrument Serif";
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.75em;
+      }
+
+      /* color: rgb(77, 93, 255); */
+    </style>
   </head>
-  <body class="flex full start">
-    <div class="flex content full">
-      <!-- header container -->
-      <div class="flex gap wrap bottom">
-        <img class="profile transition" src="assets/dris-elamri-image.jpg" alt="Dris Elamri photo" />
-        <div class="flex row gap top bottom">
-          <h1>Dris Elamri</h1>
-          <i class="icon accent fa-solid fa-circle-check"></i>
+  <body>
+    <header style="margin: 0">
+      <!-- <img height="64px" width="64px" src="assets/dris-elamri-image.jpg" alt="Dris Elamri photo" /> -->
+      <h1 style="margin-top: 12px; margin-bottom: 12px">DRIS ELAMRI.</h1>
+      <p style="margin-top: 6px; font-size: 0.8em">
+        <a style="text-decoration: underline" href="/#contact">Contact</a> |
+        <a style="text-decoration: underline" href="https://www.linkedin.com/in/driselamri/" target="_blank">LinkedIn</a> |
+        <a style="text-decoration: underline" href="https://x.com/driselamri" target="_blank">Twitter</a> |
+        <a style="text-decoration: underline" href="https://www.instagram.com/dris.404/" target="_blank">Instagram</a> |
+        <a style="text-decoration: underline" href="https://www.github.com/dris-e" target="_blank">Github</a>
+      </p>
+    </header>
+    <main>
+      <p>Entrepreneur, designer, creator, & developer from Minnesota.</p>
+    </main>
+    <hr />
+    <article>
+      <blockquote>"Updating Formscale & <a href="https://world.dris.one" target="_blank">DRIS WORLD</a>."<br />- Mar 25, 2025</blockquote>
+    </article>
+    <hr />
+    <article>
+      <h2>VENTURES:</h2>
+      <dl>
+        <dt><a href="https://formscale.com" target="_blank">Formscale</a> (2025-)</dt>
+        <dd>Open-source form backend.</dd>
+        <dt><a href="https://lira.study" target="_blank">LIRA</a> (2024)</dt>
+        <dd>AI study tool (acquired).</dd>
+        <dt><a href="https://parkt.app" target="_blank">Parkt</a> (2024-)</dt>
+        <dd>Parking marketplace app.</dd>
+        <dt><a href="https://world.dris.one" target="_blank">DRIS LLC</a> (2025-)</dt>
+        <dd>Marketing & brand development.</dd>
+        <dt><a href="https://sparkhs.org" target="_blank">SparkHS</a> (2023-2025)</dt>
+        <dd>High-school business competition.</dd>
+        <dt><a href="https://www.congressionalappchallenge.us/2018-mn3/" target="_blank">lemonAYD</a> (2018-2019)</dt>
+        <dd>School fundraising app (CAC 2018).</dd>
+      </dl>
+    </article>
+    <hr />
+    <article>
+      <h2>PROJECTS:</h2>
+      <dl>
+        <dt><a href="https://world.dris.one" target="_blank">DRIS WORLD</a> (2025)</dt>
+        <dd>Multiplayer virtual world.</dd>
+        <dt><a href="https://dris-e.github.io/worldspin" target="_blank">WORLDKEEPSSPINNING</a> (2025)</dt>
+        <dd>Site for a friend.</dd>
+        <dt><a href="https://quarter.nyc" target="_blank">Quarter</a> (2025)</dt>
+        <dd>Made the logo.</dd>
+        <dt><a href="https://collegerejections.com" target="_blank">CollegeRejections.com</a> (2024)</dt>
+        <dd>Post your college rejection letters.</dd>
+        <dt><a href="https://internetgradient.com" target="_blank">The Internet Gradient</a> (2024)</dt>
+        <dd>Real-time multiplayer gradient.</dd>
+      </dl>
+    </article>
+    <hr />
+    <article id="contact">
+      <h2>CONTACT:</h2>
+      <p>Contact me @ <a href="mailto:elamri@dris.llc">elamri@dris.llc</a> or with the form below.</p>
+      <form action="https://api.formscale.dev/s/umaxbwv7" method="POST">
+        <p>
+          <label for="email">Email:</label><br />
+          <input type="email" name="email" required />
+        </p>
+        <p>
+          <label for="message">Message:</label><br />
+          <textarea name="message" rows="8" cols="48" required></textarea>
+        </p>
+        <div>
+          <button type="submit">Submit</button>
         </div>
-        <!-- <span><span id="age">17</span>y/o Entrepreneur, Designer, Creator, & Developer.</span> -->
-        <span>Entrepreneur, Designer, Creator, & Developer.</span>
-        <div class="flex row gap">
-          <p class="bold">Currently:</p>
-          <span class="secondary right italic" id="status">Updating Parkt!</span>
-        </div>
-        <div class="flex row gap top">
-          <i class="icon pin sm accent fa-solid fa-thumbtack"></i>
-          <span class="secondary bold">Minnesota, USA</span>
-        </div>
-      </div>
-      <!-- links section -->
-      <section class="flex gaps full">
-        <div class="box transition active">
-          <a class="flex row between" href="mailto:elamri@dris.llc" target="_blank">
-            <i class="icon lg primary fa-solid fa-paper-plane"></i>
-            <div class="flex row">
-              <p>elamri@dris.llc</p>
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <div class="box transition">
-          <a class="flex row between" href="https://www.linkedin.com/in/driselamri/" target="_blank">
-            <i class="icon lg primary fa-brands fa-linkedin"></i>
-            <div class="flex row">
-              <p>LinkedIn</p>
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <div class="box transition">
-          <a class="flex row between" href="https://www.youtube.com/@dris404" target="_blank">
-            <i class="icon lg primary fa-brands fa-youtube"></i>
-            <div class="flex row">
-              <p>YouTube</p>
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <!-- <div class="box transition">
-          <a class="flex row between" href="https://www.tiktok.com/@dris.404" target="_blank">
-            <i class="icon lg primary fa-brands fa-tiktok"></i>
-            <div class="flex row">
-              <p>TikTok</p>
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div> -->
-        <div class="box transition">
-          <a class="flex row between" href="https://www.instagram.com/dris.404/" target="_blank">
-            <i class="icon lg primary fa-brands fa-instagram-square"></i>
-            <div class="flex row">
-              <p>Instagram</p>
-              <!-- <i class="arrow secondary fa-solid fa-arrow-up-right-from-square"></i> -->
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <div class="box transition">
-          <a class="flex row between" href="https://www.x.com/driselamri/" target="_blank">
-            <i class="icon lg primary fa-brands fa-x-twitter"></i>
-            <div class="flex row">
-              <p>Twitter</p>
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <!-- <div class="box transition">
-          <a class="flex row between" href="https://www.twitch.tv/dris404" target="_blank">
-            <i class="icon lg primary fa-brands fa-twitch"></i>
-            <div class="flex row">
-              <p>Twitch</p>
-              <i class="arrow secondary fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div> -->
-      </section>
-      <!-- projects section -->
-      <section class="flex gap full">
-        <p class="bold bottom">Latest projects:</p>
-        <div class="flex row wrap full top">
-          <div class="project transition">
-            <a class="flex" href="https://collegerejections.com" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">CollegeRejections.com</p>
-                <p class="secondary italic">2024</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="assets/college-rejections-logo.png" alt="CollegeRejections.com, a site by Dris Elamri" />
-                <p class="left full">Site to post college rejections.</p>
-              </div>
-            </a>
-          </div>
-          <div class="project transition">
-            <a class="flex" href="https://lira.study" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">LIRA</p>
-                <p class="secondary italic">2024</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="assets/lira-logo.png" alt="LIRA, a company by Dris Elamri" />
-                <p class="left full">Study tool for students.</p>
-              </div>
-            </a>
-          </div>
-          <div class="project transition">
-            <a class="flex" href="https://internetgradient.com" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">The Internet Gradient</p>
-                <p class="secondary italic">2024</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="https://internetgradient.com/static/internet-gradient-image.png" alt="The Internet Gradient, a site by Dris Elamri" />
-                <p class="left full">Real-time multiplayer gradient.</p>
-              </div>
-            </a>
-          </div>
-          <div class="project transition">
-            <a class="flex" href="https://parkt.app" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">Parkt</p>
-                <p class="secondary italic">2024 -</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="https://cdn.parkt.app/PARKT-LOGO-LIGHT-SMALL.png" alt="Parkt logo, a company by Dris Elamri" />
-                <p class="left full">Parking marketplace app.</p>
-              </div>
-            </a>
-          </div>
-          <div class="project transition">
-            <a class="flex" href="https://sparkhs.org" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">SparkHS</p>
-                <p class="secondary italic">2023 -</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="https://sparkhs.org/assets/SPARKHS-DARK-ALTERNATE-SMALL.png" alt="SparkHS logo, an organization owned by Dris Elamri" />
-                <p class="left full">High-school competition.</p>
-              </div>
-            </a>
-          </div>
-          <div class="project transition">
-            <a class="flex" href="https://dris.llc" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">DRIS LLC</p>
-                <p class="secondary italic">2022 -</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="https://dris.llc/assets/logos/dris-llc-logo.png" alt="dris LLC logo, owned by Dris Elamri" />
-                <p class="left full">Marketing & brand development.</p>
-              </div>
-            </a>
-          </div>
-          <div class="project transition">
-            <a class="flex" href="https://www.congressionalappchallenge.us/2018-mn3/" target="_blank">
-              <div class="flex row between line full">
-                <p class="bold">lemonAYD</p>
-                <p class="secondary italic">2018-2019</p>
-              </div>
-              <div class="flex gaps full inner">
-                <img src="https://dris.one/assets/lemonayd-logo.png" alt="lemonAYD logo - I made this in 6th grade I know it's bad" />
-                <p class="left full">School fundraising app.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-    <a href="/" class="secondary transition underline">&#169; <span id="year">2024</span> Dris Elamri - elamri@dris.llc</a>
-    <!-- background / image -->
-    <div class="background"></div>
+        <p>
+          <small> Powered by <a href="https://formscale.dev" target="_blank">Formscale</a>. </small>
+        </p>
+      </form>
+    </article>
   </body>
-  <script type="text/javascript">
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const birthDate = new Date("July 5, 2007");
-    const currentDate = new Date();
-
-    const status = document.getElementById("status");
-
-    if (currentDate.getMonth() === birthDate.getMonth() && currentDate.getDate() === birthDate.getDate()) {
-      status.textContent = "My birthday";
-    }
-
-    let age = currentDate.getFullYear() - birthDate.getFullYear();
-    if (
-      currentDate.getMonth() < birthDate.getMonth() ||
-      (currentDate.getMonth() === birthDate.getMonth() && currentDate.getDate() < birthDate.getDate())
-    ) {
-      age--;
-    }
-    document.getElementById("age").textContent = age;
-
-    const boxes = document.querySelectorAll(".box");
-
-    boxes.forEach((box) => {
-      box.addEventListener("mouseenter", () => {
-        boxes[0].classList.remove("active");
-      });
-    });
-  </script>
 </html>
