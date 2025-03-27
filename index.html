@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://dris.one/assets/dris-elamri-favicon.png" />
+    <link rel="icon" type="image/png" href="https://dris.one/assets/dris-favicon.png" />
     <title>Dris Elamri - Entrepreneur, Designer, Creator, & Developer | dris.one</title>
     <meta
       name="description"
@@ -18,13 +18,13 @@
     <meta property="og:title" content="Dris Elamri - Entrepreneur, Designer, Creator, & Developer" />
     <meta property="og:description" content="Dris Elamri, an entrepreneur & developer from Minnesota." />
     <meta property="og:site_name" content="Dris Elamri" />
-    <!-- <meta property="og:image" content="https://dris.one/assets/dris-elamri-image.jpg" /> -->
+    <meta property="og:image" content="https://dris.one/assets/dris-cover.png" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://dris.one/" />
     <meta property="twitter:title" content="Dris Elamri - Entrepreneur, Designer, Creator, & Developer " />
     <meta property="twitter:description" content="Dris Elamri, an entrepreneur & developer from Minnesota." />
-    <!-- <meta property="twitter:image" content="https://dris.one/assets/dris-elamri-image.jpg" /> -->
+    <meta property="twitter:image" content="https://dris.one/assets/dris-cover.png" />
 
     <link rel="canonical" href="https://dris.one/" />
     <meta name="robots" content="index, follow" />
@@ -69,22 +69,17 @@
         background: rgba(77, 93, 255, 0.7);
       }
 
-      /* @font-face {
-        font-family: "Instrument Serif";
-        src: url("/assets/InstrumentSerif.ttf");
-      }
-
       @font-face {
-        font-family: "Pixelify Sans";
-        src: url("/assets/PixelifySans.ttf");
+        font-family: "Melodrame";
+        src: url("/assets/Melodrame.ttf");
       }
 
       h1,
-      h2 {
-        font-family: "Instrument Serif";
-        font-family: "Pixelify Sans", sans-serif;
-        font-family: "Arial", sans-serif;
-      } */
+      h2,
+      h3 {
+        font-family: "Melodrame", sans-serif;
+        letter-spacing: 0.05em;
+      }
 
       h1 {
         font-size: 2.5em;
@@ -94,35 +89,45 @@
         font-size: 2em;
       }
 
-      /* color: rgb(77, 93, 255); */
+      h3 {
+        font-size: 12em;
+        letter-spacing: 0;
+        margin: 0;
+        opacity: 0.1;
+        color: rgb(77, 93, 255);
+        top: 0;
+        /* right: 0; */
+        position: absolute;
+        pointer-events: none;
+        white-space: nowrap;
+      }
     </style>
   </head>
   <body>
-    <header style="margin: 0">
+    <header style="margin: 0; text-align: right">
       <!-- <img height="64px" width="64px" src="assets/dris-elamri-image.jpg" alt="Dris Elamri photo" /> -->
-      <h1>DRIS ELAMRI.</h1>
-      <p>Entrepreneur, designer, creator, & developer from Minnesota.</p>
+      <h1>DRIS ELAMRI</h1>
+      <p>Entrepreneur, designer, creator, & dev from Minnesota.</p>
 
       <p>
         <a style="text-decoration: underline" href="/#contact">Contact</a> /
         <a style="text-decoration: underline" href="https://www.linkedin.com/in/driselamri/" target="_blank">LinkedIn</a> /
         <a style="text-decoration: underline" href="https://x.com/driselamri" target="_blank">Twitter</a> /
-        <a style="text-decoration: underline" href="https://www.instagram.com/dris.404/" target="_blank">Instagram</a> /
-        <a style="text-decoration: underline" href="https://www.github.com/dris-e" target="_blank">Github</a>
+        <a style="text-decoration: underline" href="https://www.github.com/dris-e" target="_blank">GitHub</a>
       </p>
     </header>
     <main>
-      <hr />
+      <!-- <hr />
       <article>
         <h2>CURRENTLY:</h2>
         <blockquote>
           "Updating Formscale & <a href="https://world.dris.one" target="_blank">DRIS WORLD</a>."<br />
           Mar 25, 2025
         </blockquote>
-      </article>
+      </article> -->
       <hr />
       <article>
-        <h2>VENTURES:</h2>
+        <h2>VENTURES.</h2>
         <dl>
           <dt><a href="https://formscale.dev" target="_blank">Formscale</a> (2025-)</dt>
           <dd>Open-source form backend.</dd>
@@ -140,7 +145,7 @@
       </article>
       <hr />
       <article>
-        <h2>PROJECTS:</h2>
+        <h2>PROJECTS.</h2>
         <dl>
           <dt><a href="https://world.dris.one" target="_blank">DRIS WORLD</a> (2025)</dt>
           <dd>Multiplayer virtual world.</dd>
@@ -158,7 +163,7 @@
       </article>
       <hr />
       <article id="contact">
-        <h2>CONTACT:</h2>
+        <h2>CONTACT.</h2>
         <p>Contact me @ <a href="mailto:elamri@dris.llc">elamri@dris.llc</a> or using the form below.</p>
         <form action="https://api.formscale.dev/s/umaxbwv7" method="POST">
           <p>
@@ -178,10 +183,53 @@
         </form>
       </article>
     </main>
+    <h3>2025</h3>
   </body>
   <script>
-    const text = "DRIS ELAMRI";
     const h1 = document.querySelector("h1");
+    const h3 = document.querySelector("h3");
+    h3.textContent = new Date().getFullYear().toString();
+    const text = h1.textContent;
+
+    const calculateDays = () => {
+      const birthday = new Date("2007-07-05");
+      const today = new Date();
+      const diffTime = Math.abs(today - birthday);
+      return Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    };
+
+    const animateDigit = (targetNum, position, onComplete) => {
+      let currentNum = 0;
+      const target = parseInt(targetNum[position]);
+
+      const interval = setInterval(() => {
+        if (currentNum > target) {
+          currentNum = 0;
+        }
+
+        const digits = h3.textContent.split("");
+        digits[position] = currentNum;
+        h3.textContent = digits.join("");
+
+        if (currentNum === target) {
+          clearInterval(interval);
+          if (onComplete) onComplete();
+        }
+
+        currentNum++;
+      }, 50);
+    };
+
+    const updateAge = () => {
+      const days = calculateDays().toString().padStart(h3.textContent.length, "0");
+
+      const animateNext = (pos) => {
+        if (pos < 0) return;
+        animateDigit(days, pos, () => animateNext(pos - 1));
+      };
+
+      animateNext(days.length - 1);
+    };
 
     const scramble = () => {
       const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -201,6 +249,7 @@
         if (iterations >= text.length) {
           clearInterval(interval);
           h1.textContent = text + ".";
+          updateAge();
         }
       }, 100);
     };
