@@ -100,13 +100,27 @@
         pointer-events: none;
         white-space: nowrap;
       }
+
+      @media (max-width: 480px) {
+        header {
+          text-align: left !important;
+        }
+
+        h3 {
+          right: 0;
+        }
+
+        span {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
     <header style="margin: 0; text-align: right">
       <!-- <img height="64px" width="64px" src="assets/dris-elamri-image.jpg" alt="Dris Elamri photo" /> -->
       <h1>DRIS ELAMRI</h1>
-      <p>Entrepreneur, designer, creator, & dev from Minnesota.</p>
+      <p>Entrepreneur, designer, creator, & dev<span> from Minnesota</span>.</p>
 
       <p>
         <a style="text-decoration: underline" href="/#contact">Contact</a> /
@@ -163,7 +177,7 @@
       <hr />
       <article id="contact">
         <h2>CONTACT.</h2>
-        <p>Contact me @ <a href="mailto:elamri@dris.llc">elamri@dris.llc</a> or using the form below.</p>
+        <p>Contact me at <a href="mailto:elamri@dris.llc">elamri@dris.llc</a> or using the form below.</p>
         <form action="https://api.formscale.dev/s/umaxbwv7" method="POST">
           <p>
             <label for="email">Email:</label><br />
